@@ -11,6 +11,7 @@
 
 
 import click
+import pytz
 from datetime import datetime
 from keen.client import KeenClient
 
@@ -28,19 +29,31 @@ class Formatter(object):
             write_key=self.write_key,
         )
 
+        timezone = pytz.timezone(self.data['user']['timezone'])
+
         events = []
         with click.progressbar(self.data['days'],
                             label='Preparing keen.io events',
                             fill_char=click.style('#', fg='blue')) as days:
+
             for day in days:
-                timestamp = (datetime.strptime(day['date'], '%m/%d/%Y')
-                             .strftime('%Y-%m-%dT%H:%M:%S.000Z'))
+                dt_with_tz = (datetime.strptime(day['date'], '%m/%d/%Y').
+                              replace(tzinfo=timezone).
+                              replace(hour=12))
+                timestamp = (dt_with_tz.astimezone(pytz.utc).
+                             strftime('%Y-%m-%dT%H:%M:%S.000Z'))
+
                 events.append({
                     'keen': {
                         'timestamp': timestamp,
                     },
                     'seconds': day['grand_total']['total_seconds'],
                     'type': 'total',
+                    'weekday': dt_with_tz.strftime('%A'),
+                    'weekday_number': dt_with_tz.strftime('%w'),
+                    'day': dt_with_tz.strftime('%d'),
+                    'month': dt_with_tz.strftime('%m'),
+                    'year': dt_with_tz.strftime('%Y'),
                 })
 
                 categories = [
@@ -58,6 +71,11 @@ class Formatter(object):
                             'seconds': item['total_seconds'],
                             'name': item['name'],
                             'type': category,
+                            'weekday': dt_with_tz.strftime('%A'),
+                            'weekday_number': dt_with_tz.strftime('%w'),
+                            'day': dt_with_tz.strftime('%d'),
+                            'month': dt_with_tz.strftime('%m'),
+                            'year': dt_with_tz.strftime('%Y'),
                         })
 
                 files = {}
@@ -75,6 +93,11 @@ class Formatter(object):
                         'seconds': seconds,
                         'name': name,
                         'type': 'file',
+                        'weekday': dt_with_tz.strftime('%A'),
+                        'weekday_number': dt_with_tz.strftime('%w'),
+                        'day': dt_with_tz.strftime('%d'),
+                        'month': dt_with_tz.strftime('%m'),
+                        'year': dt_with_tz.strftime('%Y'),
                     })
 
         if len(events) == 0:

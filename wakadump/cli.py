@@ -1,0 +1,50 @@
+# -*- coding: utf-8 -*-
+"""
+    wakadump.cli
+    ~~~~~~~~~~~~
+
+    Command-line entry point.
+
+    :copyright: (c) 2015 Alan Hamlett.
+    :license: BSD, see LICENSE for more details.
+"""
+
+
+import click
+import simplejson as json
+
+from .__about__ import __version__
+from .compat import import_module
+
+
+def check_format(ctx, param, value):
+    if value == 'keen.io':
+        ctx.params['project_id'] = click.prompt('keen.io Project ID',
+                                                type=click.STRING)
+        ctx.params['write_key'] = click.prompt('keen.io project Write Key',
+                                               type=click.STRING,
+                                               hide_input=True)
+    elif value == 'csv':
+        ctx.params['output'] = click.prompt('Output csv file',
+                                                type=click.File('w'))
+    return value
+
+
+def make_module_name(module_name):
+    return module_name.replace('.', '').replace('-', '')
+
+
+@click.command()
+@click.option('--input', help='path to json data dump from wakatime.com',
+              type=click.File('r'), required=True)
+@click.option('--format', type=click.Choice(['keen.io', 'csv']), required=True,
+              help='export format', callback=check_format)
+@click.version_option(__version__)
+def main(input, format, **kwargs):
+    data = json.loads(input.read())
+
+    module_name = make_module_name(format)
+    module = import_module('.formats.%s' % module_name, package=__package__)
+    formatter = getattr(module, 'Formatter')(data, **kwargs)
+    formatter.run()
+    click.echo('Complete.')

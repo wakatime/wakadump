@@ -1,0 +1,9 @@
+__title__ = 'wakadump'
+__description__ = 'Command line tool for converting WakaTime data dump files into various formats.'
+__url__ = 'https://github.com/wakatime/wakadump'
+__version_info__ = ('1', '0', '0')
+__version__ = '.'.join(__version_info__)
+__author__ = 'Alan Hamlett'
+__author_email__ = 'alan@wakatime.com'
+__license__ = 'BSD'
+__copyright__ = 'Copyright 2015 Alan Hamlett'

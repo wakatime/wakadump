@@ -17,7 +17,7 @@ Usage
 
 After exporting your WakaTime data as JSON from your `settings page <https://wakatime.com/settings>`_, you can convert the JSON file into various formats::
 
-    wakadump --input <json data dump> --format <output format>
+    wakadump --input <json data dump> --output <format>
     
 
 Output Formats

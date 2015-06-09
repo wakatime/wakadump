@@ -16,12 +16,12 @@ import unicodecsv
 
 class Formatter(object):
 
-    def __init__(self, data, output=None):
+    def __init__(self, data, output_file=None):
         self.data = data
-        self.output = output
+        self.output_file = output_file
 
     def run(self):
-        w = unicodecsv.writer(self.output, encoding='utf-8')
+        w = unicodecsv.writer(self.output_file, encoding='utf-8')
         w.writerow(('Date', 'Total Logged Seconds'))
         with click.progressbar(self.data['days'],
                                label='Exporting to CSV',

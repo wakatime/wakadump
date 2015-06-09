@@ -17,7 +17,7 @@ from .__about__ import __version__
 from .compat import import_module
 
 
-def check_format(ctx, param, value):
+def check_output(ctx, param, value):
     if value == 'keen.io':
         ctx.params['project_id'] = click.prompt('keen.io Project ID',
                                                 type=click.STRING)
@@ -25,7 +25,7 @@ def check_format(ctx, param, value):
                                                type=click.STRING,
                                                hide_input=True)
     elif value == 'csv':
-        ctx.params['output'] = click.prompt('Output csv file',
+        ctx.params['output_file'] = click.prompt('Output csv file',
                                                 type=click.File('w'))
     return value
 
@@ -37,13 +37,13 @@ def make_module_name(module_name):
 @click.command()
 @click.option('--input', help='path to json data dump from wakatime.com',
               type=click.File('r'), required=True)
-@click.option('--format', type=click.Choice(['keen.io', 'csv']), required=True,
-              help='export format', callback=check_format)
+@click.option('--output', type=click.Choice(['keen.io', 'csv']), required=True,
+              help='export format', callback=check_output)
 @click.version_option(__version__)
-def main(input, format, **kwargs):
+def main(input, output, **kwargs):
     data = json.loads(input.read())
 
-    module_name = make_module_name(format)
+    module_name = make_module_name(output)
     module = import_module('.formats.%s' % module_name, package=__package__)
     formatter = getattr(module, 'Formatter')(data, **kwargs)
     formatter.run()

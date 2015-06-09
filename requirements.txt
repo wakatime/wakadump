@@ -1,6 +1,4 @@
 keen==0.3.3
-python-dateutil==2.2
-pytz==2014.9
 simplejson==3.6.5
 unicodecsv==0.9.4
 click==4.0

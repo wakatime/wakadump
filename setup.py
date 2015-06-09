@@ -33,7 +33,7 @@ setup(
     platforms='any',
     install_requires=install_requires,
     entry_points={
-        'console_scripts': ['wakadump = wakadump:main'],
+        'console_scripts': ['wakadump = wakadump.cli:main'],
     },
     classifiers=(
         'Development Status :: 5 - Production/Stable',

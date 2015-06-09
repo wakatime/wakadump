@@ -10,8 +10,3 @@
     :copyright: (c) 2015 Alan Hamlett.
     :license: BSD, see LICENSE for more details.
 """
-
-
-__all__ = ['main']
-
-from .cli import main

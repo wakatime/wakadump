@@ -23,6 +23,22 @@ class Formatter(object):
         self.project_id = project_id
         self.write_key = write_key
 
+    def append_event(self, dt, event_type, values):
+        timestamp = dt.astimezone(pytz.utc)
+        event = {
+            'keen': {
+                'timestamp': timestamp.strftime('%Y-%m-%dT%H:%M:%S.000Z'),
+            },
+            'type': event_type,
+            'weekday': dt.strftime('%A'),
+            'weekday_number': dt.strftime('%w'),
+            'day': dt.strftime('%d'),
+            'month': dt.strftime('%m'),
+            'year': dt.strftime('%Y'),
+        }
+        event.update(values)
+        self.events.append(event)
+
     def run(self):
         keen_client = KeenClient(
             project_id=self.project_id,
@@ -85,17 +101,3 @@ class Formatter(object):
         keen_client.add_events({
             collection: self.events,
         })
-
-        def append_event(self, event_type, dt):
-            timestamp = dt.astimezone(pytz.utc)
-            return {
-                'keen': {
-                    'timestamp': timestamp.strftime('%Y-%m-%dT%H:%M:%S.000Z'),
-                },
-                'type': event_type,
-                'weekday': dt.strftime('%A'),
-                'weekday_number': dt.strftime('%w'),
-                'day': dt.strftime('%d'),
-                'month': dt.strftime('%m'),
-                'year': dt.strftime('%Y'),
-            }

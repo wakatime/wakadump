@@ -31,29 +31,18 @@ class Formatter(object):
 
         timezone = pytz.timezone(self.data['user']['timezone'])
 
-        events = []
+        self.events = []
         with click.progressbar(self.data['days'],
                             label='Preparing keen.io events',
                             fill_char=click.style('#', fg='blue')) as days:
 
             for day in days:
-                dt_with_tz = (datetime.strptime(day['date'], '%m/%d/%Y').
+                dt = (datetime.strptime(day['date'], '%m/%d/%Y').
                               replace(tzinfo=timezone).
                               replace(hour=12))
-                timestamp = (dt_with_tz.astimezone(pytz.utc).
-                             strftime('%Y-%m-%dT%H:%M:%S.000Z'))
 
-                events.append({
-                    'keen': {
-                        'timestamp': timestamp,
-                    },
+                self.append_event(dt, 'total', {
                     'seconds': day['grand_total']['total_seconds'],
-                    'type': 'total',
-                    'weekday': dt_with_tz.strftime('%A'),
-                    'weekday_number': dt_with_tz.strftime('%w'),
-                    'day': dt_with_tz.strftime('%d'),
-                    'month': dt_with_tz.strftime('%m'),
-                    'year': dt_with_tz.strftime('%Y'),
                 })
 
                 categories = [
@@ -64,18 +53,9 @@ class Formatter(object):
                 ]
                 for category in categories:
                     for item in day.get(category + 's', []):
-                        events.append({
-                            'keen': {
-                                'timestamp': timestamp,
-                            },
+                        self.append_event(dt, category, {
                             'seconds': item['total_seconds'],
                             'name': item['name'],
-                            'type': category,
-                            'weekday': dt_with_tz.strftime('%A'),
-                            'weekday_number': dt_with_tz.strftime('%w'),
-                            'day': dt_with_tz.strftime('%d'),
-                            'month': dt_with_tz.strftime('%m'),
-                            'year': dt_with_tz.strftime('%Y'),
                         })
 
                 files = {}
@@ -86,21 +66,12 @@ class Formatter(object):
                         files[f['name']] += f['total_seconds']
 
                 for name, seconds in files.items():
-                    events.append({
-                        'keen': {
-                            'timestamp': timestamp,
-                        },
+                    self.append_event(dt, 'file', {
                         'seconds': seconds,
                         'name': name,
-                        'type': 'file',
-                        'weekday': dt_with_tz.strftime('%A'),
-                        'weekday_number': dt_with_tz.strftime('%w'),
-                        'day': dt_with_tz.strftime('%d'),
-                        'month': dt_with_tz.strftime('%m'),
-                        'year': dt_with_tz.strftime('%Y'),
                     })
 
-        if len(events) == 0:
+        if len(self.events) == 0:
             click.echo('No events available for exporting to keen.io')
             return
 
@@ -112,5 +83,19 @@ class Formatter(object):
             end=end.strftime('%Y-%m-%d'),
         )
         keen_client.add_events({
-            collection: events,
+            collection: self.events,
         })
+
+        def append_event(self, event_type, dt):
+            timestamp = dt.astimezone(pytz.utc)
+            return {
+                'keen': {
+                    'timestamp': timestamp.strftime('%Y-%m-%dT%H:%M:%S.000Z'),
+                },
+                'type': event_type,
+                'weekday': dt.strftime('%A'),
+                'weekday_number': dt.strftime('%w'),
+                'day': dt.strftime('%d'),
+                'month': dt.strftime('%m'),
+                'year': dt.strftime('%Y'),
+            }

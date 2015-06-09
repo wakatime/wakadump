@@ -8,6 +8,7 @@ Installation
 ------------
 
 Install using pip::
+
     pip install wakadump
 
 

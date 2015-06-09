@@ -3,6 +3,13 @@ History
 -------
 
 
+2.0.0 (2015-06-09)
+++++++++++++++++++
+
+- rename argument --filter to --output
+- include date parts in KeenIO output
+
+
 1.0.3 (2015-06-08)
 ++++++++++++++++++
 

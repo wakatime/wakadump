@@ -3,6 +3,12 @@ History
 -------
 
 
+2.0.1 (2015-09-08)
+++++++++++++++++++
+
+- support date formats YYYY-MM-DD and MM-DD-YYYY
+
+
 2.0.0 (2015-06-09)
 ++++++++++++++++++
 

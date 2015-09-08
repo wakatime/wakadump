@@ -53,7 +53,7 @@ class Formatter(object):
                             fill_char=click.style('#', fg='blue')) as days:
 
             for day in days:
-                dt = (datetime.strptime(day['date'], '%m/%d/%Y').
+                dt = (datetime.strptime(day['date'], '%m-%d-%Y').
                               replace(tzinfo=timezone).
                               replace(hour=12))
 

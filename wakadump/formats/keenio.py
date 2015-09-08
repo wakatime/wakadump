@@ -53,9 +53,7 @@ class Formatter(object):
                             fill_char=click.style('#', fg='blue')) as days:
 
             for day in days:
-                dt = (datetime.strptime(day['date'], '%m-%d-%Y').
-                              replace(tzinfo=timezone).
-                              replace(hour=12))
+                dt = self._parse_date(day['date'], timezone)
 
                 self.append_event(dt, 'total', {
                     'seconds': day['grand_total']['total_seconds'],
@@ -101,3 +99,12 @@ class Formatter(object):
         keen_client.add_events({
             collection: self.events,
         })
+
+    def _parse_date(self, date_str, timezone):
+        dt = None
+        try:
+            dt = datetime.strptime(date_str, '%m-%d-%Y')
+        except ValueError:
+            dt = datetime.strptime(date_str, '%Y-%m-%d')
+        dt = dt.replace(tzinfo=timezone).replace(hour=12)
+        return dt

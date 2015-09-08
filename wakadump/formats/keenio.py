@@ -102,6 +102,7 @@ class Formatter(object):
 
     def _parse_date(self, date_str, timezone):
         dt = None
+        date_str = date_str.replace('/', '-')
         try:
             dt = datetime.strptime(date_str, '%m-%d-%Y')
         except ValueError:

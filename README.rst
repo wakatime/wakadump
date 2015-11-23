@@ -1,6 +1,9 @@
 wakadump
 ========
 
+.. image:: https://travis-ci.org/wakatime/wakadump.svg?branch=master
+    :target: https://travis-ci.org/wakatime/wakadump
+
 Command line tool for converting WakaTime data dump files into various formats.
 
 

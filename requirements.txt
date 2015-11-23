@@ -1,5 +1,5 @@
-click==4.0
+click==5.1
 keen==0.3.3
 pytz==2015.4
 simplejson==3.6.5
-unicodecsv==0.9.4
+unicodecsv==0.14.1

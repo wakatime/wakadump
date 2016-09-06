@@ -1,5 +1,5 @@
-click==5.1
-keen==0.3.3
-pytz==2015.4
-simplejson==3.6.5
+click==6.6
+keen==0.3.26
+pytz==2016.6.1
+simplejson==3.8.2
 unicodecsv==0.14.1

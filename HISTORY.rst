@@ -3,6 +3,12 @@ History
 -------
 
 
+2.0.4 (2016-09-17)
+++++++++++++++++++
+
+- Check input file for valid format before processing. #6
+
+
 2.0.3 (2016-09-07)
 ++++++++++++++++++
 

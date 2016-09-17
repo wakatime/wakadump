@@ -12,6 +12,7 @@
 
 import click
 import simplejson as json
+import traceback
 
 from .__about__ import __version__
 from .compat import import_module
@@ -42,6 +43,12 @@ def make_module_name(module_name):
 @click.version_option(__version__)
 def main(input, output, **kwargs):
     data = json.loads(input.read())
+    try:
+        data['days']
+    except KeyError:
+        click.echo(traceback.format_exc(), err=True)
+        click.echo('Wrong input file format. Is it a valid WakaTime Data Dump from your Settings page?', err=True)
+        return
 
     module_name = make_module_name(output)
     module = import_module('.formats.%s' % module_name, package=__package__)

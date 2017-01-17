@@ -3,6 +3,12 @@ History
 -------
 
 
+2.0.5 (2017-01-16)
+++++++++++++++++++
+
+- Use new data dump format without projects.dump subkey.
+
+
 2.0.4 (2016-09-17)
 ++++++++++++++++++
 

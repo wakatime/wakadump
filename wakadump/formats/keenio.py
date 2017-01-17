@@ -74,7 +74,7 @@ class Formatter(object):
 
                 files = {}
                 for project in day.get('projects', []):
-                    for f in project.get('dump', {}).get('entities', []):
+                    for f in project.get('entities', []):
                         if f['name'] not in files:
                             files[f['name']] = 0
                         files[f['name']] += f['total_seconds']

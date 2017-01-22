@@ -67,8 +67,11 @@ class Formatter(object):
                 ]
                 for category in categories:
                     for item in day.get(category + 's', []):
+                        sec = item.get('total_seconds',
+                                       item.get('grand_total',
+                                                {}).get('total_seconds'))
                         self.append_event(dt, category, {
-                            'seconds': item['total_seconds'],
+                            'seconds': sec,
                             'name': item['name'],
                         })
 

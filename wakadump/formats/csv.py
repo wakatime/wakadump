@@ -86,7 +86,7 @@ class Formatter(object):
     def _add_data_for_columns(self, existing_data, column_names, column_data):
         data = {}
         for item in column_data:
-            data[item['name']] = item['total_seconds']
+            data[item['name']] = item.get('total_seconds', item.get('grand_total', {}).get('total_seconds'))
         existing_data.append('')
         for name in column_names:
             existing_data.append(data.get(name, 0))

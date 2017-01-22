@@ -3,6 +3,13 @@ History
 -------
 
 
+2.0.6 (2017-01-22)
+++++++++++++++++++
+
+- Use new data dump format where projects has total_seconds nested under 
+  grand_total. #7
+
+
 2.0.5 (2017-01-16)
 ++++++++++++++++++
 

@@ -3,10 +3,16 @@ History
 -------
 
 
+3.0.0 (2017-09-06)
+++++++++++++++++++
+
+- Improved Python3 and Unicode CSV support.
+
+
 2.0.6 (2017-01-22)
 ++++++++++++++++++
 
-- Use new data dump format where projects has total_seconds nested under 
+- Use new data dump format where projects has total_seconds nested under
   grand_total. #7
 
 

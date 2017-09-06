@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
+import os
 import logging
 import sys
+import tempfile
 
 from wakadump.compat import u
 
@@ -52,3 +54,25 @@ class TestCase(unittest.TestCase):
     @property
     def isPy35(self):
         return (sys.version_info[0] == 3 and sys.version_info[1] == 5)
+
+
+class NamedTemporaryFile(object):
+    """Context manager for a named temporary file compatible with Windows.
+
+    Provides the path to a closed temporary file that is writeable. Deletes the
+    temporary file when exiting the context manager. The built-in
+    tempfile.NamedTemporaryFile is not writeable on Windows.
+    """
+    name = None
+
+    def __enter__(self):
+        fh = tempfile.NamedTemporaryFile(delete=False)
+        self.name = fh.name
+        fh.close()
+        return self
+
+    def __exit__(self, type, value, traceback):
+        try:
+            os.unlink(self.name)
+        except:
+            pass

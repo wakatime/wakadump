@@ -1,0 +1,1057 @@
+{
+  "days": [
+    {
+      "date": "2013-06-24",
+      "editors": [
+        {
+          "digital": "0:03:24",
+          "hours": 0,
+          "minutes": 3,
+          "name": "Vim",
+          "percent": 100.0,
+          "seconds": 24,
+          "text": "3 mins",
+          "total_seconds": 204
+        }
+      ],
+      "entities": [
+        {
+          "digital": "0:03:24",
+          "hours": 0,
+          "minutes": 3,
+          "name": "/home/alan/git/vim-wakatime/plugin/wakatime.vim",
+          "percent": 100.0,
+          "seconds": 24,
+          "text": "3 mins",
+          "total_seconds": 204,
+          "type": "file"
+        }
+      ],
+      "grand_total": {
+        "digital": "0:03",
+        "hours": 0,
+        "minutes": 3,
+        "text": "3 mins",
+        "total_seconds": 204
+      },
+      "languages": [
+        {
+          "digital": "0:03:24",
+          "hours": 0,
+          "minutes": 3,
+          "name": "VimL",
+          "percent": 100.0,
+          "seconds": 24,
+          "text": "3 mins",
+          "total_seconds": 204
+        }
+      ],
+      "operating_systems": [
+        {
+          "digital": "0:03:24",
+          "hours": 0,
+          "minutes": 3,
+          "name": "Linux",
+          "percent": 100.0,
+          "seconds": 24,
+          "text": "3 mins",
+          "total_seconds": 204
+        }
+      ],
+      "projects": [
+        {
+          "branches": [
+            {
+              "digital": "0:03:24",
+              "hours": 0,
+              "minutes": 3,
+              "name": "master",
+              "percent": 100.0,
+              "seconds": 24,
+              "text": "3 mins",
+              "total_seconds": 204
+            }
+          ],
+          "editors": [
+            {
+              "digital": "0:03:24",
+              "hours": 0,
+              "minutes": 3,
+              "name": "Vim",
+              "percent": 100.0,
+              "seconds": 24,
+              "text": "3 mins",
+              "total_seconds": 204
+            }
+          ],
+          "entities": [
+            {
+              "digital": "0:03:24",
+              "hours": 0,
+              "minutes": 3,
+              "name": "/home/alan/git/vim-wakatime/plugin/wakatime.vim",
+              "percent": 100.0,
+              "seconds": 24,
+              "text": "3 mins",
+              "total_seconds": 204,
+              "type": "file"
+            }
+          ],
+          "grand_total": {
+            "digital": "0:03",
+            "hours": 0,
+            "minutes": 3,
+            "percent": 100.0,
+            "text": "3 mins",
+            "total_seconds": 204
+          },
+          "languages": [
+            {
+              "digital": "0:03:24",
+              "hours": 0,
+              "minutes": 3,
+              "name": "VimL",
+              "percent": 100.0,
+              "seconds": 24,
+              "text": "3 mins",
+              "total_seconds": 204
+            }
+          ],
+          "name": "vim-wakatime",
+          "operating_systems": [
+            {
+              "digital": "0:03:24",
+              "hours": 0,
+              "minutes": 3,
+              "name": "Linux",
+              "percent": 100.0,
+              "seconds": 24,
+              "text": "3 mins",
+              "total_seconds": 204
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2017-07-04",
+      "editors": [
+        {
+          "digital": "3:10:00",
+          "hours": 3,
+          "minutes": 10,
+          "name": "Vim",
+          "percent": 100.00,
+          "seconds": 0,
+          "text": "3 hrs 10 mins",
+          "total_seconds": 11400
+        }
+      ],
+      "entities": [
+        {
+          "digital": "0:57:02",
+          "hours": 0,
+          "minutes": 57,
+          "name": "/Users/alan/git/wakatime/wakatime/templates/common/base.html",
+          "percent": 30.03,
+          "seconds": 2,
+          "text": "57 mins",
+          "total_seconds": 3422,
+          "type": "file"
+        },
+        {
+          "digital": "0:22:34",
+          "hours": 0,
+          "minutes": 22,
+          "name": "/Users/alan/git/chrome-wakatime/assets/js/core/WakaTimeCore.js",
+          "percent": 11.88,
+          "seconds": 34,
+          "text": "22 mins",
+          "total_seconds": 1354,
+          "type": "file"
+        },
+        {
+          "digital": "0:14:06",
+          "hours": 0,
+          "minutes": 14,
+          "name": "/Users/alan/git/wakatime/setup/etc/nginx/available/wakatime-web.conf",
+          "percent": 7.42,
+          "seconds": 6,
+          "text": "14 mins",
+          "total_seconds": 846,
+          "type": "file"
+        },
+        {
+          "digital": "0:12:48",
+          "hours": 0,
+          "minutes": 12,
+          "name": "/Users/alan/git/wakatime/wakatime/utils.py",
+          "percent": 6.74,
+          "seconds": 48,
+          "text": "12 mins",
+          "total_seconds": 768,
+          "type": "file"
+        },
+        {
+          "digital": "0:10:53",
+          "hours": 0,
+          "minutes": 10,
+          "name": "/Users/alan/git/wakatime/wakatime/api_v1.py",
+          "percent": 5.73,
+          "seconds": 53,
+          "text": "10 mins",
+          "total_seconds": 653,
+          "type": "file"
+        },
+        {
+          "digital": "0:10:46",
+          "hours": 0,
+          "minutes": 10,
+          "name": "/Users/alan/git/wakatime/wakatime/api_utils.py",
+          "percent": 5.67,
+          "seconds": 46,
+          "text": "10 mins",
+          "total_seconds": 646,
+          "type": "file"
+        },
+        {
+          "digital": "0:10:32",
+          "hours": 0,
+          "minutes": 10,
+          "name": "/Users/alan/git/wakatime/wakatime/views.py",
+          "percent": 5.55,
+          "seconds": 32,
+          "text": "10 mins",
+          "total_seconds": 632,
+          "type": "file"
+        },
+        {
+          "digital": "0:08:30",
+          "hours": 0,
+          "minutes": 8,
+          "name": "/Users/alan/git/wakatime/wakatime/forms.py",
+          "percent": 4.48,
+          "seconds": 30,
+          "text": "8 mins",
+          "total_seconds": 510,
+          "type": "file"
+        },
+        {
+          "digital": "0:07:51",
+          "hours": 0,
+          "minutes": 7,
+          "name": "/Users/alan/git/wakatime/wakatime/share/views.py",
+          "percent": 4.13,
+          "seconds": 51,
+          "text": "7 mins",
+          "total_seconds": 471,
+          "type": "file"
+        },
+        {
+          "digital": "0:05:16",
+          "hours": 0,
+          "minutes": 5,
+          "name": "/Users/alan/git/wakatime/setup/py-requirements-cpython.txt",
+          "percent": 2.77,
+          "seconds": 16,
+          "text": "5 mins",
+          "total_seconds": 316,
+          "type": "file"
+        },
+        {
+          "digital": "0:04:39",
+          "hours": 0,
+          "minutes": 4,
+          "name": "/Users/alan/git/wakatime/setup/setup_prod.sh",
+          "percent": 2.45,
+          "seconds": 39,
+          "text": "4 mins",
+          "total_seconds": 279,
+          "type": "file"
+        },
+        {
+          "digital": "0:04:00",
+          "hours": 0,
+          "minutes": 4,
+          "name": "/Users/alan/git/vscode-wakatime/package.json",
+          "percent": 2.11,
+          "seconds": 0,
+          "text": "4 mins",
+          "total_seconds": 240,
+          "type": "file"
+        },
+        {
+          "digital": "0:03:40",
+          "hours": 0,
+          "minutes": 3,
+          "name": "/Users/alan/git/wakatime/setup/etc/nginx/available/prevent-being-in-iframe.conf",
+          "percent": 1.93,
+          "seconds": 40,
+          "text": "3 mins",
+          "total_seconds": 220,
+          "type": "file"
+        },
+        {
+          "digital": "0:03:12",
+          "hours": 0,
+          "minutes": 3,
+          "name": "/Users/alan/git/wakatime/wakatime/tasks.py",
+          "percent": 1.68,
+          "seconds": 12,
+          "text": "3 mins",
+          "total_seconds": 192,
+          "type": "file"
+        },
+        {
+          "digital": "0:01:33",
+          "hours": 0,
+          "minutes": 1,
+          "name": "/Users/alan/git/wakatime/wakatime/templates/share/embed.html",
+          "percent": 0.82,
+          "seconds": 33,
+          "text": "1 min",
+          "total_seconds": 93,
+          "type": "file"
+        },
+        {
+          "digital": "0:01:10",
+          "hours": 0,
+          "minutes": 1,
+          "name": "/Users/alan/git/wakatime/wakatime/config.py",
+          "percent": 0.61,
+          "seconds": 10,
+          "text": "1 min",
+          "total_seconds": 70,
+          "type": "file"
+        },
+        {
+          "digital": "0:00:45",
+          "hours": 0,
+          "minutes": 0,
+          "name": "/Users/alan/.ssh/config",
+          "percent": 0.39,
+          "seconds": 45,
+          "text": "45 secs",
+          "total_seconds": 45,
+          "type": "file"
+        },
+        {
+          "digital": "0:00:38",
+          "hours": 0,
+          "minutes": 0,
+          "name": "/Users/alan/git/wakatime/wakatime/share/utils.py",
+          "percent": 0.33,
+          "seconds": 38,
+          "text": "38 secs",
+          "total_seconds": 38,
+          "type": "file"
+        },
+        {
+          "digital": "0:00:33",
+          "hours": 0,
+          "minutes": 0,
+          "name": "/Users/alan/git/wakatime/wakatime/compat.py",
+          "percent": 0.29,
+          "seconds": 33,
+          "text": "33 secs",
+          "total_seconds": 33,
+          "type": "file"
+        },
+        {
+          "digital": "0:00:13",
+          "hours": 0,
+          "minutes": 0,
+          "name": "/Users/alan/git/wakatime/wakatime/teams/views.py",
+          "percent": 0.11,
+          "seconds": 13,
+          "text": "13 secs",
+          "total_seconds": 13,
+          "type": "file"
+        },
+        {
+          "digital": "0:00:08",
+          "hours": 0,
+          "minutes": 0,
+          "name": "/Users/alan/git/wakatime/scripts/backup_db_to_s3.py",
+          "percent": 0.07,
+          "seconds": 8,
+          "text": "8 secs",
+          "total_seconds": 8,
+          "type": "file"
+        },
+        {
+          "digital": "0:00:07",
+          "hours": 0,
+          "minutes": 0,
+          "name": "/Users/alan/git/wakatime/wakatime/leaders/views.py",
+          "percent": 0.06,
+          "seconds": 7,
+          "text": "7 secs",
+          "total_seconds": 7,
+          "type": "file"
+        }
+      ],
+      "grand_total": {
+        "digital": "3:08",
+        "hours": 3,
+        "minutes": 8,
+        "text": "3 hrs 8 mins",
+        "total_seconds": 11399
+      },
+      "languages": [
+        {
+          "digital": "1:07:23",
+          "hours": 1,
+          "minutes": 7,
+          "name": "Python",
+          "percent": 35.47,
+          "seconds": 23,
+          "text": "1 hr 7 mins",
+          "total_seconds": 4043
+        },
+        {
+          "digital": "0:58:35",
+          "hours": 0,
+          "minutes": 58,
+          "name": "HTML",
+          "percent": 30.84,
+          "seconds": 35,
+          "text": "58 mins",
+          "total_seconds": 3515
+        },
+        {
+          "digital": "0:22:34",
+          "hours": 0,
+          "minutes": 22,
+          "name": "JavaScript",
+          "percent": 11.88,
+          "seconds": 34,
+          "text": "22 mins",
+          "total_seconds": 1354
+        },
+        {
+          "digital": "0:18:31",
+          "hours": 0,
+          "minutes": 18,
+          "name": "Other",
+          "percent": 9.75,
+          "seconds": 31,
+          "text": "18 mins",
+          "total_seconds": 1111
+        },
+        {
+          "digital": "0:12:59",
+          "hours": 0,
+          "minutes": 12,
+          "name": "JSON",
+          "percent": 6.84,
+          "seconds": 59,
+          "text": "12 mins",
+          "total_seconds": 779
+        },
+        {
+          "digital": "0:05:16",
+          "hours": 0,
+          "minutes": 5,
+          "name": "Text",
+          "percent": 2.77,
+          "seconds": 16,
+          "text": "5 mins",
+          "total_seconds": 316
+        },
+        {
+          "digital": "0:04:39",
+          "hours": 0,
+          "minutes": 4,
+          "name": "Bash",
+          "percent": 2.45,
+          "seconds": 39,
+          "text": "4 mins",
+          "total_seconds": 279
+        }
+      ],
+      "operating_systems": [
+        {
+          "digital": "3:10:00",
+          "hours": 3,
+          "minutes": 10,
+          "name": "Mac",
+          "percent": 100.00,
+          "seconds": 0,
+          "text": "3 hrs 10 mins",
+          "total_seconds": 11400
+        }
+      ],
+      "projects": [
+        {
+          "branches": [
+            {
+              "digital": "2:33:37",
+              "hours": 2,
+              "minutes": 33,
+              "name": "master",
+              "percent": 100.00,
+              "seconds": 37,
+              "text": "2 hrs 33 mins",
+              "total_seconds": 9217
+            }
+          ],
+          "editors": [
+            {
+              "digital": "2:33:41",
+              "hours": 2,
+              "minutes": 33,
+              "name": "Vim",
+              "percent": 100.00,
+              "seconds": 41,
+              "text": "2 hrs 33 mins",
+              "total_seconds": 9221
+            }
+          ],
+          "entities": [
+            {
+              "digital": "0:57:02",
+              "hours": 0,
+              "minutes": 57,
+              "name": "/Users/alan/git/wakatime/wakatime/templates/common/base.html",
+              "percent": 37.13,
+              "seconds": 2,
+              "text": "57 mins",
+              "total_seconds": 3422,
+              "type": "file"
+            },
+            {
+              "digital": "0:14:06",
+              "hours": 0,
+              "minutes": 14,
+              "name": "/Users/alan/git/wakatime/setup/etc/nginx/available/wakatime-web.conf",
+              "percent": 9.18,
+              "seconds": 6,
+              "text": "14 mins",
+              "total_seconds": 846,
+              "type": "file"
+            },
+            {
+              "digital": "0:12:48",
+              "hours": 0,
+              "minutes": 12,
+              "name": "/Users/alan/git/wakatime/wakatime/utils.py",
+              "percent": 8.33,
+              "seconds": 48,
+              "text": "12 mins",
+              "total_seconds": 768,
+              "type": "file"
+            },
+            {
+              "digital": "0:10:53",
+              "hours": 0,
+              "minutes": 10,
+              "name": "/Users/alan/git/wakatime/wakatime/api_v1.py",
+              "percent": 7.08,
+              "seconds": 53,
+              "text": "10 mins",
+              "total_seconds": 653,
+              "type": "file"
+            },
+            {
+              "digital": "0:10:46",
+              "hours": 0,
+              "minutes": 10,
+              "name": "/Users/alan/git/wakatime/wakatime/api_utils.py",
+              "percent": 7.01,
+              "seconds": 46,
+              "text": "10 mins",
+              "total_seconds": 646,
+              "type": "file"
+            },
+            {
+              "digital": "0:10:32",
+              "hours": 0,
+              "minutes": 10,
+              "name": "/Users/alan/git/wakatime/wakatime/views.py",
+              "percent": 6.86,
+              "seconds": 32,
+              "text": "10 mins",
+              "total_seconds": 632,
+              "type": "file"
+            },
+            {
+              "digital": "0:08:30",
+              "hours": 0,
+              "minutes": 8,
+              "name": "/Users/alan/git/wakatime/wakatime/forms.py",
+              "percent": 5.53,
+              "seconds": 30,
+              "text": "8 mins",
+              "total_seconds": 510,
+              "type": "file"
+            },
+            {
+              "digital": "0:07:51",
+              "hours": 0,
+              "minutes": 7,
+              "name": "/Users/alan/git/wakatime/wakatime/share/views.py",
+              "percent": 5.11,
+              "seconds": 51,
+              "text": "7 mins",
+              "total_seconds": 471,
+              "type": "file"
+            },
+            {
+              "digital": "0:05:16",
+              "hours": 0,
+              "minutes": 5,
+              "name": "/Users/alan/git/wakatime/setup/py-requirements-cpython.txt",
+              "percent": 3.43,
+              "seconds": 16,
+              "text": "5 mins",
+              "total_seconds": 316,
+              "type": "file"
+            },
+            {
+              "digital": "0:04:39",
+              "hours": 0,
+              "minutes": 4,
+              "name": "/Users/alan/git/wakatime/setup/setup_prod.sh",
+              "percent": 3.03,
+              "seconds": 39,
+              "text": "4 mins",
+              "total_seconds": 279,
+              "type": "file"
+            },
+            {
+              "digital": "0:03:40",
+              "hours": 0,
+              "minutes": 3,
+              "name": "/Users/alan/git/wakatime/setup/etc/nginx/available/prevent-being-in-iframe.conf",
+              "percent": 2.39,
+              "seconds": 40,
+              "text": "3 mins",
+              "total_seconds": 220,
+              "type": "file"
+            },
+            {
+              "digital": "0:03:12",
+              "hours": 0,
+              "minutes": 3,
+              "name": "/Users/alan/git/wakatime/wakatime/tasks.py",
+              "percent": 2.08,
+              "seconds": 12,
+              "text": "3 mins",
+              "total_seconds": 192,
+              "type": "file"
+            },
+            {
+              "digital": "0:01:33",
+              "hours": 0,
+              "minutes": 1,
+              "name": "/Users/alan/git/wakatime/wakatime/templates/share/embed.html",
+              "percent": 1.01,
+              "seconds": 33,
+              "text": "1 min",
+              "total_seconds": 93,
+              "type": "file"
+            },
+            {
+              "digital": "0:01:10",
+              "hours": 0,
+              "minutes": 1,
+              "name": "/Users/alan/git/wakatime/wakatime/config.py",
+              "percent": 0.76,
+              "seconds": 10,
+              "text": "1 min",
+              "total_seconds": 70,
+              "type": "file"
+            },
+            {
+              "digital": "0:00:38",
+              "hours": 0,
+              "minutes": 0,
+              "name": "/Users/alan/git/wakatime/wakatime/share/utils.py",
+              "percent": 0.41,
+              "seconds": 38,
+              "text": "38 secs",
+              "total_seconds": 38,
+              "type": "file"
+            },
+            {
+              "digital": "0:00:33",
+              "hours": 0,
+              "minutes": 0,
+              "name": "/Users/alan/git/wakatime/wakatime/compat.py",
+              "percent": 0.36,
+              "seconds": 33,
+              "text": "33 secs",
+              "total_seconds": 33,
+              "type": "file"
+            },
+            {
+              "digital": "0:00:13",
+              "hours": 0,
+              "minutes": 0,
+              "name": "/Users/alan/git/wakatime/wakatime/teams/views.py",
+              "percent": 0.14,
+              "seconds": 13,
+              "text": "13 secs",
+              "total_seconds": 13,
+              "type": "file"
+            },
+            {
+              "digital": "0:00:08",
+              "hours": 0,
+              "minutes": 0,
+              "name": "/Users/alan/git/wakatime/scripts/backup_db_to_s3.py",
+              "percent": 0.09,
+              "seconds": 8,
+              "text": "8 secs",
+              "total_seconds": 8,
+              "type": "file"
+            },
+            {
+              "digital": "0:00:07",
+              "hours": 0,
+              "minutes": 0,
+              "name": "/Users/alan/git/wakatime/wakatime/leaders/views.py",
+              "percent": 0.08,
+              "seconds": 7,
+              "text": "7 secs",
+              "total_seconds": 7,
+              "type": "file"
+            }
+          ],
+          "grand_total": {
+            "digital": "2:33",
+            "hours": 2,
+            "minutes": 33,
+            "percent": 80.89,
+            "text": "2 hrs 33 mins",
+            "total_seconds": 9217
+          },
+          "languages": [
+            {
+              "digital": "1:07:23",
+              "hours": 1,
+              "minutes": 7,
+              "name": "Python",
+              "percent": 43.86,
+              "seconds": 23,
+              "text": "1 hr 7 mins",
+              "total_seconds": 4043
+            },
+            {
+              "digital": "0:58:35",
+              "hours": 0,
+              "minutes": 58,
+              "name": "HTML",
+              "percent": 38.13,
+              "seconds": 35,
+              "text": "58 mins",
+              "total_seconds": 3515
+            },
+            {
+              "digital": "0:17:46",
+              "hours": 0,
+              "minutes": 17,
+              "name": "Other",
+              "percent": 11.56,
+              "seconds": 46,
+              "text": "17 mins",
+              "total_seconds": 1066
+            },
+            {
+              "digital": "0:05:16",
+              "hours": 0,
+              "minutes": 5,
+              "name": "Text",
+              "percent": 3.43,
+              "seconds": 16,
+              "text": "5 mins",
+              "total_seconds": 316
+            },
+            {
+              "digital": "0:04:39",
+              "hours": 0,
+              "minutes": 4,
+              "name": "Bash",
+              "percent": 3.03,
+              "seconds": 39,
+              "text": "4 mins",
+              "total_seconds": 279
+            }
+          ],
+          "name": "wakatime",
+          "operating_systems": [
+            {
+              "digital": "2:33:41",
+              "hours": 2,
+              "minutes": 33,
+              "name": "Mac",
+              "percent": 100.00,
+              "seconds": 41,
+              "text": "2 hrs 33 mins",
+              "total_seconds": 9221
+            }
+          ]
+        },
+        {
+          "branches": [
+            {
+              "digital": "0:22:34",
+              "hours": 0,
+              "minutes": 22,
+              "name": "master",
+              "percent": 100.00,
+              "seconds": 34,
+              "text": "22 mins",
+              "total_seconds": 1354
+            }
+          ],
+          "editors": [
+            {
+              "digital": "0:22:34",
+              "hours": 0,
+              "minutes": 22,
+              "name": "Vim",
+              "percent": 100.00,
+              "seconds": 34,
+              "text": "22 mins",
+              "total_seconds": 1354
+            }
+          ],
+          "entities": [
+            {
+              "digital": "0:22:34",
+              "hours": 0,
+              "minutes": 22,
+              "name": "/Users/alan/git/chrome-wakatime/assets/js/core/WakaTimeCore.js",
+              "percent": 100.00,
+              "seconds": 34,
+              "text": "22 mins",
+              "total_seconds": 1354,
+              "type": "file"
+            }
+          ],
+          "grand_total": {
+            "digital": "0:22",
+            "hours": 0,
+            "minutes": 22,
+            "percent": 11.88,
+            "text": "22 mins",
+            "total_seconds": 1354
+          },
+          "languages": [
+            {
+              "digital": "0:22:34",
+              "hours": 0,
+              "minutes": 22,
+              "name": "JavaScript",
+              "percent": 100.00,
+              "seconds": 34,
+              "text": "22 mins",
+              "total_seconds": 1354
+            }
+          ],
+          "name": "chrome-wakatime",
+          "operating_systems": [
+            {
+              "digital": "0:22:34",
+              "hours": 0,
+              "minutes": 22,
+              "name": "Mac",
+              "percent": 100.00,
+              "seconds": 34,
+              "text": "22 mins",
+              "total_seconds": 1354
+            }
+          ]
+        },
+        {
+          "branches": [
+            {
+              "digital": "0:09:44",
+              "hours": 0,
+              "minutes": 9,
+              "name": "Unknown",
+              "percent": 100.00,
+              "seconds": 44,
+              "text": "9 mins",
+              "total_seconds": 584
+            }
+          ],
+          "editors": [
+            {
+              "digital": "0:09:44",
+              "hours": 0,
+              "minutes": 9,
+              "name": "Vim",
+              "percent": 100.00,
+              "seconds": 44,
+              "text": "9 mins",
+              "total_seconds": 584
+            }
+          ],
+          "entities": [
+            {
+              "digital": "0:00:45",
+              "hours": 0,
+              "minutes": 0,
+              "name": "/Users/alan/.ssh/config",
+              "percent": 7.71,
+              "seconds": 45,
+              "text": "45 secs",
+              "total_seconds": 45,
+              "type": "file"
+            }
+          ],
+          "grand_total": {
+            "digital": "0:09",
+            "hours": 0,
+            "minutes": 9,
+            "percent": 5.12,
+            "text": "9 mins",
+            "total_seconds": 584
+          },
+          "languages": [
+            {
+              "digital": "0:08:59",
+              "hours": 0,
+              "minutes": 8,
+              "name": "JSON",
+              "percent": 92.29,
+              "seconds": 59,
+              "text": "8 mins",
+              "total_seconds": 539
+            },
+            {
+              "digital": "0:00:45",
+              "hours": 0,
+              "minutes": 0,
+              "name": "Other",
+              "percent": 7.71,
+              "seconds": 45,
+              "text": "45 secs",
+              "total_seconds": 45
+            }
+          ],
+          "name": "Unknown Project",
+          "operating_systems": [
+            {
+              "digital": "0:09:44",
+              "hours": 0,
+              "minutes": 9,
+              "name": "Mac",
+              "percent": 100.00,
+              "seconds": 44,
+              "text": "9 mins",
+              "total_seconds": 584
+            }
+          ]
+        },
+        {
+          "branches": [
+            {
+              "digital": "0:04:00",
+              "hours": 0,
+              "minutes": 4,
+              "name": "master",
+              "percent": 100.00,
+              "seconds": 0,
+              "text": "4 mins",
+              "total_seconds": 240
+            }
+          ],
+          "editors": [
+            {
+              "digital": "0:04:00",
+              "hours": 0,
+              "minutes": 4,
+              "name": "Vim",
+              "percent": 100.00,
+              "seconds": 0,
+              "text": "4 mins",
+              "total_seconds": 240
+            }
+          ],
+          "entities": [
+            {
+              "digital": "0:04:00",
+              "hours": 0,
+              "minutes": 4,
+              "name": "/Users/alan/git/vscode-wakatime/package.json",
+              "percent": 100.00,
+              "seconds": 0,
+              "text": "4 mins",
+              "total_seconds": 240,
+              "type": "file"
+            }
+          ],
+          "grand_total": {
+            "digital": "0:04",
+            "hours": 0,
+            "minutes": 4,
+            "percent": 2.11,
+            "text": "4 mins",
+            "total_seconds": 240
+          },
+          "languages": [
+            {
+              "digital": "0:04:00",
+              "hours": 0,
+              "minutes": 4,
+              "name": "JSON",
+              "percent": 100.00,
+              "seconds": 0,
+              "text": "4 mins",
+              "total_seconds": 240
+            }
+          ],
+          "name": "vscode-wakatime",
+          "operating_systems": [
+            {
+              "digital": "0:04:00",
+              "hours": 0,
+              "minutes": 4,
+              "name": "Mac",
+              "percent": 100.00,
+              "seconds": 0,
+              "text": "4 mins",
+              "total_seconds": 240
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "range": {
+    "end": 1499237999,
+    "start": 1372057200
+  },
+  "user": {
+    "created_at": "2013-06-25T06:54:50Z",
+    "display_name": "Alan Hamlett",
+    "email": "alan@wakatime.com",
+    "email_public": true,
+    "full_name": "Alan Hamlett",
+    "has_premium_features": true,
+    "human_readable_website": "wakatime.com",
+    "id": "66b6796d-eb84-4bb9-b9d2-8dc882f4c6ac",
+    "is_email_confirmed": "2017-07-03T01:21:49Z",
+    "is_hireable": false,
+    "languages_used_public": true,
+    "last_heartbeat": "2017-07-05T07:07:33Z",
+    "last_plugin": "wakatime/8.0.3 (Darwin-16.6.0-x86_64-i386-64bit) Python2.7.10.final.0 vim/800 vim-wakatime/5.0.2",
+    "last_plugin_name": "Vim",
+    "last_project": "wakadump",
+    "location": "San Francisco, CA",
+    "logged_time_public": true,
+    "modified_at": "2016-03-09T03:53:33Z",
+    "photo": "https://secure.gravatar.com/avatar/29d56f43d9d9713cfe97e0abc85d099f?s=150&d=identicon",
+    "photo_public": true,
+    "plan": "premium",
+    "timeout": 60,
+    "timezone": "America/Los_Angeles",
+    "username": "alan",
+    "website": "https://wakatime.com",
+    "writes_only": false
+  }
+}

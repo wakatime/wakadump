@@ -1,5 +1,5 @@
-click==6.6
-keen==0.3.26
-pytz==2016.6.1
-simplejson==3.8.2
-unicodecsv==0.14.1
+click==6.7
+keen==0.4.0
+pytz==2017.2
+simplejson==3.11.1
+backports.csv==1.0.5

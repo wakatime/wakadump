@@ -11,6 +11,7 @@
 
 
 import click
+import io
 from backports import csv
 
 
@@ -21,37 +22,36 @@ class Formatter(object):
         self.output_file = output_file
 
     def run(self):
-        w = csv.writer(self.output_file)
+        with io.open(self.output_file, 'w', newline='', encoding='utf8') as fh:
+            w = csv.writer(fh)
 
-        self._get_column_names()
-        w.writerow(self.columns)
+            self._get_column_names()
+            w.writerow(self.columns)
 
-        with click.progressbar(self.data['days'],
-                            label='Exporting to CSV file...',
-                            fill_char=click.style('#', fg='blue')) as days:
-            for day in days:
-                data = [
-                    day['date'],
-                    day['grand_total']['total_seconds'],
-                ]
-                self._add_data_for_columns(data,
-                                            self.projects,
-                                            day['projects'])
-                self._add_data_for_columns(data,
-                                            self.entities,
-                                            day['entities'])
-                self._add_data_for_columns(data,
-                                            self.languages,
-                                            day['languages'])
-                self._add_data_for_columns(data,
-                                            self.editors,
-                                            day['editors'])
-                self._add_data_for_columns(data,
-                                            self.operating_systems,
-                                            day['operating_systems'])
-                w.writerow(data)
-
-            self.output_file.close()
+            with click.progressbar(self.data['days'],
+                                label='Exporting to CSV file...',
+                                fill_char=click.style('#', fg='blue')) as days:
+                for day in days:
+                    data = [
+                        day['date'],
+                        day['grand_total']['total_seconds'],
+                    ]
+                    self._add_data_for_columns(data,
+                                                self.projects,
+                                                day['projects'])
+                    self._add_data_for_columns(data,
+                                                self.entities,
+                                                day['entities'])
+                    self._add_data_for_columns(data,
+                                                self.languages,
+                                                day['languages'])
+                    self._add_data_for_columns(data,
+                                                self.editors,
+                                                day['editors'])
+                    self._add_data_for_columns(data,
+                                                self.operating_systems,
+                                                day['operating_systems'])
+                    w.writerow(data)
 
     def _get_column_names(self):
         self.projects = {}

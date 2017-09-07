@@ -27,7 +27,7 @@ def check_output(ctx, param, value):
                                                hide_input=True)
     elif value == 'csv':
         ctx.params['output_file'] = click.prompt('Output csv file',
-                                                type=click.File('w'))
+                                                type=click.Path())
     return value
 
 

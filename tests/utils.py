@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 
+
 import os
 import logging
 import sys
 import tempfile
-
-from wakadump.compat import u
 
 
 try:
@@ -18,6 +17,30 @@ try:
 except ImportError:
     # Python >= 2.7
     import unittest
+
+
+is_py2 = (sys.version_info[0] == 2)
+is_py3 = (sys.version_info[0] == 3)
+
+
+if is_py2:
+
+    def u(text):
+        try:
+            return text.decode('utf-8')
+        except:
+            try:
+                return unicode(text)
+            except:
+                return text
+
+elif is_py3:
+
+    def u(text):
+        if isinstance(text, bytes):
+            return text.decode('utf-8')
+        return str(text)
+
 
 class TestCase(unittest.TestCase):
     patch_these = []

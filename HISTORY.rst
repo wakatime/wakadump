@@ -3,6 +3,12 @@ History
 -------
 
 
+4.0.0 (2018-06-06)
+++++++++++++++++++
+
+- Update csv formatter to new data dump schema. #9
+
+
 3.0.1 (2017-09-06)
 ++++++++++++++++++
 

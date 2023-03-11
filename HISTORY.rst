@@ -3,16 +3,25 @@ History
 -------
 
 
+5.0.0 (2023-03-11)
+++++++++++++++++++
+
+- Drop support for Python 2.
+  `#11 <https://github.com/wakatime/wakadump/issues/11>`_
+
+
 4.0.0 (2018-06-06)
 ++++++++++++++++++
 
-- Update csv formatter to new data dump schema. #9
+- Update csv formatter to new data dump schema.
+  `#9 <https://github.com/wakatime/wakadump/issues/9>`_
 
 
 3.0.1 (2017-09-06)
 ++++++++++++++++++
 
-- Fix bug with unicode strings in CSV output. #8
+- Fix bug with unicode strings in CSV output.
+  `#8 <https://github.com/wakatime/wakadump/issues/8>`_
 
 
 3.0.0 (2017-09-06)
@@ -24,8 +33,8 @@ History
 2.0.6 (2017-01-22)
 ++++++++++++++++++
 
-- Use new data dump format where projects has total_seconds nested under
-  grand_total. #7
+- Use new data dump format where projects has total_seconds nested under grand_total.
+  `#7 <https://github.com/wakatime/wakadump/issues/7>`_
 
 
 2.0.5 (2017-01-16)
@@ -37,14 +46,14 @@ History
 2.0.4 (2016-09-17)
 ++++++++++++++++++
 
-- Check input file for valid format before processing. #6
+- Check input file for valid format before processing
+  `#6 <https://github.com/wakatime/wakadump/issues/6>`_
 
 
 2.0.3 (2016-09-07)
 ++++++++++++++++++
 
-- Include data about projects, files, languages, editors, and operating
-  systems in CSV output file.
+- Include data about projects, files, languages, editors, and operating systems in CSV output file.
 
 
 2.0.2 (2015-11-23)
